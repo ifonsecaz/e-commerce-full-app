@@ -1,0 +1,137 @@
+http://localhost:8080/api/auth/register
+POST
+{
+"username": "test",
+"password": "boligoma",
+"email": "cefonseca63@gmail.com"
+}
+
+
+{
+"username": "test2",
+"password": "boligoma",
+"email": "zeruel.typexx@gmail.com"
+}
+
+POST
+http://localhost:8080/api/auth/register/admin
+{
+"username": "admin",
+"password": "boligoma",
+"email": "ifonsecap351@gmail.com"
+}
+POST
+http://localhost:8080/api/auth/login
+{
+"username": "test",
+"password": "boligoma"
+}
+
+{
+"username": "admin
+"password": "boligoma"
+}
+
+GET
+http://localhost:8080/api/products/list
+GET
+http://localhost:8080/api/products/category
+GET
+http://localhost:8080/api/products/name/plant
+GET
+http://localhost:8080/api/products/category/Medicinal
+GET
+http://localhost:8080/api/products/{id}
+
+//user
+GET
+http://localhost:8080/api/user/info
+
+POST
+http://localhost:8080/api/user/add-to-cart
+{
+"product_id": 4,
+"quantity": 1
+}
+
+DELETE
+http://localhost:8080/api/user/remove-from-cart/product/{product_id}
+
+DELETE
+http://localhost:8080/api/user/empty-cart
+
+PUT
+http://localhost:8080/api/user/confirm-order
+
+PUT
+http://localhost:8080/api/user/reduce-unit/poduct/{id}
+
+PUT
+http://localhost:8080/api/user/increase-unit/product/{id}
+
+GET
+http://localhost:8080/api/user/view-cart
+
+GET
+http://localhost:8080/api/user/view-orders
+
+GET
+http://localhost:8080/api/user/view-order-details/{id}
+
+DELETE
+http://localhost:8080/api/user/cancel-order/{order_id}
+
+////
+
+DELETE
+http://localhost:8080/api/admin/delete/{id}
+
+DELETE
+http://localhost:8080/api/admin/products/delete/{id}
+
+PUT
+http://localhost:8080/api/admin/products/refill/{id}/units/{units}
+
+PUT
+http://localhost:8080/api/admin/products/product/{id}/price/{price}
+
+PUT
+http://localhost:8080/api/admin/products/update/{id}
+{
+product_name:,
+category:,
+description:,
+Price:,
+stock_quantity:,
+image:
+}
+
+POST
+http://localhost:8080/api/admin/products/add/{category_id}
+{
+product_name:,
+category:,
+description:,
+Price:,
+stock_quantity:,
+image:
+}
+
+POST
+http://localhost:8080/api/admin/products/add-category
+{
+category:
+}
+
+POST
+http://localhost:8080/api/admin/products/add-prod/{prod_id}/category/{cat_id}
+
+DELETE
+http://localhost:8080/api/admin/cancel-order/{id}
+
+GET
+http://localhost:8080/api/admin/view-orders
+
+GET
+http://localhost:8080/api/admin/view-order-details/{id}
+

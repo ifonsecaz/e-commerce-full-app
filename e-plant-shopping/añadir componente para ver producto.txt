@@ -1,0 +1,6 @@
+cambiar diseño para dispositivos mas pequeños
+
+hace request de nuevo token
+, para el logout se borra del cliente, y solo se espera a que expire
+
+problema con el user id
