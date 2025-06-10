@@ -1,4 +1,4 @@
-package com.ecommerce.shopplantservice.entity;
+package com.ecommerce.orderservice.entity;
 
 public class ProductDTO {
     private Long productId;

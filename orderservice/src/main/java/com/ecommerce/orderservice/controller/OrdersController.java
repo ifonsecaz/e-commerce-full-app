@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import com.ecommerce.orderservice.service.OrdersService;
-import com.ecommerce.shopplantservice.entity.ProductDTO;
+import com.ecommerce.orderservice.entity.ProductDTO;
 
 import java.util.ArrayList;
 import java.util.List;
